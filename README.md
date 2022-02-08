@@ -8,7 +8,7 @@ It is to build out this introductory component and get it looking as close to th
 
 Check solution URL to compare with challange!
 
-- Solution URL: https://www.frontendmentor.io/solutions/responsive-layout-using-css-flexbox-reactjs-gKHYLhmFT
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-landing-page-with-flexbox-grid-and-sass-tRwsR9U3L
 - Live URL: https://acelyavul.github.io/space-tourism-website/index.html
 
 ## Demo
