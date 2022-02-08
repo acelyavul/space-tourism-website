@@ -35,6 +35,9 @@ html {
 body {
   overflow: hidden;
   box-sizing: border-box; }
+  @media only screen and (max-width: 30em) {
+    body {
+      overflow: auto; } }
 
 body {
   font-family: "Barlow Condensed", sans-serif;
@@ -209,7 +212,7 @@ body {
         font-size: 18px; } }
     @media only screen and (max-width: 50em) {
       .ol-nav__link span {
-        font-size: 14px; } }
+        font-size: 10px; } }
   .ol-nav__link:hover {
     border: 1px solid #fff; }
   .ol-nav__link:active {
