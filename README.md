@@ -9,7 +9,7 @@ It is to build out this introductory component and get it looking as close to th
 Check solution URL to compare with challange!
 
 - Solution URL: https://www.frontendmentor.io/solutions/responsive-layout-using-css-flexbox-reactjs-gKHYLhmFT
-- Live URL: https://acelyavul.github.io/frontendmentor_intro-component-with-signup-form/
+- Live URL: https://acelyavul.github.io/space-tourism-website/index.html
 
 ## Demo
 
@@ -38,7 +38,7 @@ Check solution URL to compare with challange!
 1. Clone the repo
 
 ```sh
-https://github.com/acelyavul/frontendmentor_intro-component-with-signup-form.git
+https://github.com/acelyavul/space-tourism-website.git
 ```
 
 2. Install all the dependencies inside the project folder
