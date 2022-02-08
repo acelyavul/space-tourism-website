@@ -106,7 +106,7 @@
 
 		@include respond(phone) {
 			flex-direction: column;
-			row-gap: 4rem;
+			row-gap: 2rem;
 		}
 	}
 
