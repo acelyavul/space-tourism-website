@@ -325,10 +325,14 @@ body {
     height: 48px;
     flex-shrink: 0;
     text-align: center; }
-    @media only screen and (max-width: 30em) {
+    @media only screen and (max-width: 50em) {
       .header__logo {
         width: 36px;
         height: 36px; } }
+    @media only screen and (max-width: 30em) {
+      .header__logo {
+        width: 26px;
+        height: 26px; } }
   .header__line-box {
     width: 40%;
     display: flex;

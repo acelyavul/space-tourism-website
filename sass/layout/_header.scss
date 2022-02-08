@@ -15,9 +15,14 @@
 		flex-shrink: 0;
 		text-align: center;
 
-		@include respond(phone) {
+		@include respond(ipad) {
 			width: 36px;
 			height: 36px;
+		}
+
+		@include respond(phone) {
+			width: 26px;
+			height: 26px;
 		}
 	}
 
