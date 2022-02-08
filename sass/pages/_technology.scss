@@ -1,0 +1,89 @@
+.row {
+	padding-left: 12rem;
+
+	@include respond(ipad) {
+		padding: 0;
+	}
+}
+
+.technology {
+	max-width: 120rem;
+	margin: 0 auto;
+	padding-top: 4rem;
+	display: grid;
+	grid-template-columns: 10rem 1fr 35rem;
+	row-gap: 4rem;
+	column-gap: 4rem;
+
+	@include respond(tab-port) {
+		row-gap: 4rem;
+		column-gap: 2rem;
+	}
+
+	@include respond(ipad) {
+		grid-template-columns: 1fr;
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		padding-left: 8rem;
+		row-gap: 2rem;
+		grid-column: 1 / -1;
+
+		@include respond(ipad) {
+			padding-left: 14rem;
+			display: flex;
+			justify-content: flex-start;
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+		}
+	}
+
+	&__subtitle span {
+		color: $color-grey-3;
+	}
+
+	&__navbox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		grid-column: 1 / 2;
+
+		@include respond(ipad) {
+			grid-row: 3 / 4;
+		}
+	}
+
+	&__content {
+		max-width: 46rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1.5rem;
+
+		@include respond(ipad) {
+			gap: 1rem;
+			grid-row: 4 / 5;
+			padding: 2rem;
+			text-align: center;
+			justify-self: center;
+		}
+	}
+
+	&__img-box {
+		max-width: 35rem;
+		display: flex;
+		align-items: center;
+
+		@include respond(ipad) {
+			max-width: 100%;
+			grid-row: 2 / 3;
+			grid-column: 1 / 2;
+		}
+
+		&-img {
+			width: 100%;
+		}
+	}
+}

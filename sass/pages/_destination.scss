@@ -1,0 +1,120 @@
+.main {
+	@include row;
+
+	&-destination {
+		display: grid;
+		grid-template-columns: 45rem auto;
+		padding: 4rem 0;
+		row-gap: 4rem;
+		column-gap: 8rem;
+
+		@include respond(tab-land) {
+			grid-template-columns: 40rem auto;
+			column-gap: 6rem;
+		}
+
+		@include respond(tab-port) {
+			grid-template-columns: 28rem auto;
+			column-gap: 8rem;
+		}
+
+		@include respond(ipad) {
+			grid-template-columns: 1fr;
+			row-gap: 5rem;
+		}
+	}
+
+	&__subtitle {
+		text-transform: uppercase;
+		grid-column: 1 / -1;
+		padding-left: 4rem;
+
+		@include respond(ipad) {
+			display: flex;
+			justify-content: flex-start;
+		}
+	}
+
+	&__subtitle span {
+		color: $color-grey-3;
+	}
+
+	&__img-box {
+		display: flex;
+		align-self: center;
+		justify-self: center;
+		text-align: center;
+
+		@include respond(ipad) {
+			grid-row: 2 / 3;
+		}
+	}
+
+	&__img {
+		width: 90%;
+
+		@include respond(ipad) {
+			width: 60%;
+		}
+
+		@include respond(phone) {
+			width: 50%;
+		}
+	}
+
+	&__content-destination {
+		@include respond(ipad) {
+			grid-row: 3 / 4;
+		}
+	}
+
+	&__content-heading {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 4rem 2rem 0;
+
+		@include respond(ipad) {
+			padding: 2rem 4rem;
+		}
+	}
+
+	&__content-line-box {
+		margin: 2rem 0 3rem 0;
+		width: 90%;
+
+		@include respond(ipad) {
+			width: 100%;
+			padding: 0 4rem 0 4rem;
+		}
+	}
+
+	&__content-line {
+		width: 100%;
+		height: 1px;
+		opacity: 0.2;
+		background-color: $color-secondary;
+	}
+
+	&__content-info {
+		display: flex;
+		justify-content: flex-start;
+
+		@include respond(ipad) {
+			justify-content: center;
+			text-align: center;
+		}
+
+		@include respond(phone) {
+			flex-direction: column;
+			row-gap: 4rem;
+		}
+	}
+
+	&__content-distance {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		gap: 1rem;
+	}
+}

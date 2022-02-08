@@ -1,0 +1,28 @@
+.margin-bottom-small {
+	margin-bottom: 4rem;
+}
+
+.margin-bottom-medium {
+	margin-bottom: 7rem;
+
+	@include respond(ipad) {
+		margin-bottom: 4rem;
+	}
+}
+
+.padding-top-medium {
+	margin-top: 7rem;
+}
+
+.padding-top-big {
+	margin-top: 12rem;
+}
+
+.grayish {
+	color: $color-grey-4;
+	font-weight: $font-weight-bold;
+}
+
+.padding-reset {
+	padding: 0 !important;
+}

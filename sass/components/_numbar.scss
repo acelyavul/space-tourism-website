@@ -1,0 +1,71 @@
+.ol-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2rem;
+
+	@include respond(ipad) {
+		flex-direction: row;
+	}
+
+	&__link:link,
+	&__link:visited {
+		display: inline-block;
+		width: 7.5rem;
+		height: 7.5rem;
+		border-radius: 50%;
+		border: 2px solid rgba($color-grey-1, 0.2);
+		cursor: pointer;
+		text-decoration: none;
+		text-align: center;
+		position: relative;
+
+		@include respond(ipad) {
+			width: 4.5rem;
+			height: 4.5rem;
+		}
+
+		@include respond(phone) {
+			width: 3rem;
+			height: 3rem;
+		}
+	}
+
+	&__link span {
+		color: $color-tertiary;
+		font-size: 24px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@include respond(ipad) {
+			font-size: 18px;
+		}
+
+		@include respond(ipad) {
+			font-size: 14px;
+		}
+	}
+
+	&__link:hover {
+		border: 1px solid $color-tertiary;
+	}
+
+	&__link:active {
+		background-color: $color-tertiary;
+	}
+
+	&__link:active * {
+		color: $color-primary;
+	}
+
+	.active--btn {
+		background-color: $color-tertiary;
+	}
+
+	.active--num {
+		color: $color-primary !important;
+	}
+}

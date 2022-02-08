@@ -1,0 +1,54 @@
+@mixin row {
+	margin: 0 auto;
+	max-width: 120rem;
+	padding-left: 12rem;
+	padding-right: 8rem;
+
+	@include respond(ipad) {
+		padding: 0 10rem 0 10rem;
+	}
+
+	@include respond(phone) {
+		padding: 0;
+	}
+}
+
+// MEDIA QUERY
+/*
+0 - 480px:      Phone
+480 - 768px:      iPad
+769 - 1024px:    Tablet portrait
+1025 - 1200px:   Tablet landscape
+1801px + :      Big desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		@media only screen and (max-width: 30em) {
+			@content;
+		} //480px
+	}
+	@if $breakpoint == ipad {
+		@media only screen and (max-width: 50em) {
+			@content;
+		} //768px
+	}
+	@if $breakpoint == tab-port {
+		@media only screen and (max-width: 64em) {
+			@content;
+		} //1024px
+	}
+	@if $breakpoint == tab-land {
+		@media only screen and (max-width: 75em) {
+			@content;
+		} //1200px
+	}
+	@if $breakpoint == big-desktop {
+		@media only screen and (min-width: 112.5em) {
+			@content;
+		} //1800
+	}
+}

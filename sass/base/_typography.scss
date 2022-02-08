@@ -1,0 +1,99 @@
+body {
+	font-family: "Barlow Condensed", sans-serif;
+	color: $color-tertiary;
+}
+
+.heading-primary {
+	font-family: "Bellefair";
+	font-weight: $font-weight-regular;
+	font-size: 11.9rem;
+	text-transform: uppercase;
+
+	@include respond(ipad) {
+		font-size: 9.9rem;
+		text-align: center;
+	}
+}
+
+.heading-secondary {
+	font-family: "Bellefair";
+	font-weight: $font-weight-regular;
+	font-size: 6.8rem;
+	text-transform: uppercase;
+
+	@include respond(tab-port) {
+		font-size: 5.2rem;
+	}
+
+	@include respond(ipad) {
+		text-align: center;
+	}
+}
+
+.heading-tertiary {
+	font-family: "Bellefair";
+	font-weight: $font-weight-regular;
+	font-size: 4.2rem;
+	text-transform: uppercase;
+
+	@include respond(tab-port) {
+		font-size: 3.2rem;
+	}
+}
+.heading-quaternary {
+	font-family: "Bellefair";
+	font-weight: $font-weight-regular;
+	font-size: 2.6rem;
+	letter-spacing: 2.7px;
+}
+
+.heading-quinary {
+	font-family: "Barlow Condensed";
+	font-weight: $font-weight-regular;
+	font-size: 1.8rem;
+	letter-spacing: 4.75px;
+	text-transform: uppercase;
+
+	@include respond(tab-port) {
+		font-size: 1.4rem;
+	}
+
+	@include respond(ipad) {
+		text-align: center;
+	}
+}
+
+.subheading-1 {
+	font-family: "Bellefair";
+	font-weight: $font-weight-regular;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+
+	@include respond(tab-port) {
+		font-size: 1.8rem;
+	}
+}
+
+.subheading-2 {
+	font-family: "Barlow Condensed";
+	font-weight: $font-weight-regular;
+	font-size: 1.4rem;
+	letter-spacing: 2.35px;
+	text-transform: uppercase;
+	color: $color-secondary;
+
+	@include respond(tab-port) {
+		font-size: 1.2rem;
+	}
+}
+
+.body-text {
+	font-size: $default-font-size;
+	letter-spacing: 1.6px;
+	color: $color-secondary;
+	line-height: 1.8;
+
+	@include respond(ipad) {
+		text-align: center;
+	}
+}

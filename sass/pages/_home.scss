@@ -1,0 +1,69 @@
+.main {
+	@include row;
+
+	&-home {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		justify-content: space-evenly;
+		align-items: flex-end;
+		padding: 12rem 0;
+
+		@include respond(ipad) {
+			grid-template-columns: 2fr auto;
+			row-gap: 5rem;
+		}
+	}
+
+	&__content-home {
+		max-width: 42rem;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		@include respond(ipad) {
+			grid-row: 1 / 2;
+			margin: 0 auto;
+		}
+	}
+
+	& h5 {
+		color: $color-secondary;
+	}
+
+	&__button {
+		background-color: $color-tertiary;
+		border-radius: 50%;
+		width: 20rem;
+		height: 20rem;
+		text-transform: uppercase;
+		font-size: 2.8rem;
+		font-family: "Bellefair Regualar";
+		border: none;
+		justify-self: center;
+		cursor: pointer;
+
+		@include respond(tab-port) {
+			width: 16rem;
+			height: 16rem;
+			font-size: 2.5rem;
+		}
+
+		@include respond(ipad) {
+			grid-row: 3 / 4;
+		}
+
+		@include respond(phone) {
+			width: 15rem;
+			height: 15rem;
+			font-size: 2rem;
+		}
+	}
+
+	&__button:hover {
+		box-shadow: 0 0 0 50px rgba($color-grey-1, 0.2);
+
+		@include respond(phone) {
+			box-shadow: 0 0 0 40px rgba($color-grey-1, 0.2);
+		}
+	}
+}

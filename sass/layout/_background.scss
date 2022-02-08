@@ -1,0 +1,59 @@
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: -1;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&--home {
+		background-image: url("../assets/home/background-home-desktop.jpg");
+
+		@include respond(ipad) {
+			background-image: url("../assets/home/background-home-tablet.jpg");
+		}
+
+		@include respond(phone) {
+			background-image: url("../assets/home/background-home-mobile.jpg");
+		}
+	}
+
+	&--destinations {
+		background-image: url("../assets/destination/background-destination-desktop.jpg");
+
+		@include respond(ipad) {
+			background-image: url("../assets/destination/background-destination-tablet.jpg");
+		}
+
+		@include respond(phone) {
+			background-image: url("../assets/destination/background-destination-mobile.jpg");
+		}
+	}
+
+	&--crew {
+		background-image: url("../assets/crew/background-crew-desktop.jpg");
+
+		@include respond(ipad) {
+			background-image: url("../assets/crew/background-crew-tablet.jpg");
+		}
+
+		@include respond(phone) {
+			background-image: url("../assets/crew/background-crew-mobile.jpg");
+		}
+	}
+
+	&--technology {
+		background-image: url("../assets/technology/background-technology-desktop.jpg");
+
+		@include respond(ipad) {
+			background-image: url("../assets/technology/background-technology-tablet.jpg");
+		}
+
+		@include respond(phone) {
+			background-image: url("../assets/technology/background-technology-mobile.jpg");
+		}
+	}
+}
