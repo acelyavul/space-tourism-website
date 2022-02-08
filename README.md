@@ -15,7 +15,7 @@ Check solution URL to compare with challange!
 
 ### Desktop View
 
-<img src="https://user-images.githubusercontent.com/88436030/153085311-0c30c334-d754-487e-bce4-60b0a231953e.png" alt="desktop" width="800px"/>
+<img src="https://user-images.githubusercontent.com/88436030/153094627-646918ed-e17d-4d82-b625-fe75d6519289.png" alt="desktop" width="800px"/>
 
 ### Tablet View
 
