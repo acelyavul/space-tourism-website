@@ -366,7 +366,7 @@ body {
         flex-direction: column;
         position: absolute;
         top: 12rem;
-        right: 20rem; } }
+        right: 12rem; } }
   .header__nav-list li {
     height: 7rem;
     display: flex;
