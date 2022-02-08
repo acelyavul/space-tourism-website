@@ -35,6 +35,9 @@ html {
 body {
   overflow: hidden;
   box-sizing: border-box; }
+  @media only screen and (max-width: 30em) {
+    body {
+      overflow: auto; } }
 
 body {
   font-family: "Barlow Condensed", sans-serif;
@@ -277,7 +280,8 @@ body {
         background-image: url("../assets/home/background-home-tablet.jpg"); } }
     @media only screen and (max-width: 30em) {
       .bg--home {
-        background-image: url("../assets/home/background-home-mobile.jpg"); } }
+        background-image: url("../assets/home/background-home-mobile.jpg");
+        overflow: auto; } }
   .bg--destinations {
     background-image: url("../assets/destination/background-destination-desktop.jpg"); }
     @media only screen and (max-width: 50em) {
@@ -285,7 +289,8 @@ body {
         background-image: url("../assets/destination/background-destination-tablet.jpg"); } }
     @media only screen and (max-width: 30em) {
       .bg--destinations {
-        background-image: url("../assets/destination/background-destination-mobile.jpg"); } }
+        background-image: url("../assets/destination/background-destination-mobile.jpg");
+        overflow: auto; } }
   .bg--crew {
     background-image: url("../assets/crew/background-crew-desktop.jpg"); }
     @media only screen and (max-width: 50em) {
@@ -293,7 +298,8 @@ body {
         background-image: url("../assets/crew/background-crew-tablet.jpg"); } }
     @media only screen and (max-width: 30em) {
       .bg--crew {
-        background-image: url("../assets/crew/background-crew-mobile.jpg"); } }
+        background-image: url("../assets/crew/background-crew-mobile.jpg");
+        overflow: auto; } }
   .bg--technology {
     background-image: url("../assets/technology/background-technology-desktop.jpg"); }
     @media only screen and (max-width: 50em) {
@@ -301,7 +307,8 @@ body {
         background-image: url("../assets/technology/background-technology-tablet.jpg"); } }
     @media only screen and (max-width: 30em) {
       .bg--technology {
-        background-image: url("../assets/technology/background-technology-mobile.jpg"); } }
+        background-image: url("../assets/technology/background-technology-mobile.jpg");
+        overflow: auto; } }
 
 .header {
   height: 7rem;

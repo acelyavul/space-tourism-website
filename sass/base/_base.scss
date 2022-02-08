@@ -31,4 +31,8 @@ html {
 body {
 	overflow: hidden;
 	box-sizing: border-box;
+
+	@include respond(phone) {
+		overflow: auto;
+	}
 }
