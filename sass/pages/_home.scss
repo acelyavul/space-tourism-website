@@ -12,6 +12,11 @@
 			grid-template-columns: 2fr auto;
 			row-gap: 5rem;
 		}
+
+		@include respond(phone) {
+			grid-template-columns: 1fr;
+			row-gap: 5rem;
+		}
 	}
 
 	&__content-home {
