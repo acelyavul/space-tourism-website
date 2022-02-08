@@ -19,11 +19,11 @@ Check solution URL to compare with challange!
 
 ### Tablet View
 
-<img src="https://user-images.githubusercontent.com/88436030/153085744-5aaf37ff-2c9d-4be6-9e55-0f1fc0b647f7.png" alt="tablet" width="375px"/>
+<img src="https://user-images.githubusercontent.com/88436030/153094501-0aec277e-337e-4be8-84a4-40ce100d817c.png" alt="tablet" width="375px"/>
 
 ### Mobile View
 
-<img src="https://user-images.githubusercontent.com/88436030/153085830-c6b7855c-8f01-4d3e-b8d4-4f207d9060d7.png" alt="device" width="275px"/>
+<img src="https://user-images.githubusercontent.com/88436030/153094497-38147a6a-2fc7-4258-ace5-7b6b859189af.png" alt="device" width="275px"/>
 
 ## Build with
 
