@@ -4,10 +4,10 @@
 	&-crew {
 		display: grid;
 		grid-template-columns: auto 40rem;
-		grid-template-rows: 4rem auto;
+		grid-template-rows: 4rem;
 		padding: 4rem 0 0 0;
 		column-gap: 8rem;
-		height: 93vh;
+		height: 90vh;
 
 		@include respond(tab-land) {
 			grid-template-columns: auto 35rem;
@@ -23,17 +23,13 @@
 			grid-template-columns: 1fr;
 			text-align: center;
 		}
-
-		@include respond(phone) {
-			height: 75vh;
-		}
 	}
 
 	&__content-crew {
 		max-width: 46rem;
 		display: flex;
 		flex-direction: column;
-		padding: 8rem 0 0 0;
+		padding-top: 8rem;
 		gap: 1.5rem;
 		grid-row: 2 / 3;
 		grid-column: 1 / 2;
@@ -41,11 +37,12 @@
 		@include respond(ipad) {
 			gap: 1rem;
 			justify-self: center;
-			padding: 2rem 0 0 0;
+			padding-top: 2rem;
 		}
 
 		@include respond(phone) {
 			grid-row: 3 / 4;
+			padding: 0;
 		}
 	}
 
@@ -69,7 +66,6 @@
 		display: flex;
 		align-self: end;
 		justify-self: end;
-		text-align: center;
 		width: 100%;
 		grid-row: 1 / 3;
 		grid-column: 2 / 3;
@@ -81,15 +77,15 @@
 
 		@include respond(ipad) {
 			align-self: end;
-			justify-self: end;
 			justify-self: center;
-			padding-left: 6rem;
 			grid-row: 3 / 4;
 			grid-column: 1 / 2;
 		}
 
 		@include respond(phone) {
-			align-self: center;
+			width: 80%;
+			box-shadow: inset 0 -0.3px 0 $color-secondary;
+			align-self: end;
 			justify-self: center;
 			grid-row: 2 / 3;
 		}
@@ -99,11 +95,13 @@
 		width: 100%;
 
 		@include respond(ipad) {
-			width: 70%;
+			padding-left: 6rem;
+			width: 80%;
 		}
 
 		@include respond(phone) {
-			width: 60%;
+			padding-left: 3rem;
+			width: 80%;
 		}
 	}
 }

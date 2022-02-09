@@ -33,6 +33,7 @@ body {
 	box-sizing: border-box;
 
 	@include respond(phone) {
-		overflow: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 }
