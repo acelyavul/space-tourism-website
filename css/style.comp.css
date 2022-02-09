@@ -267,7 +267,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  min-height: 140%;
+  min-height: 120%;
   min-width: 100%;
   z-index: -1;
   background-repeat: no-repeat;
