@@ -28,9 +28,6 @@ html {
   @media only screen and (max-width: 50em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 30em) {
-    html {
-      font-size: 43.75%; } }
 
 body {
   overflow: hidden;
@@ -272,7 +269,8 @@ body {
   min-width: 100%;
   z-index: -1;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  object-fit: cover; }
   .bg--home {
     background-image: url("../assets/home/background-home-desktop.jpg"); }
     @media only screen and (max-width: 50em) {
